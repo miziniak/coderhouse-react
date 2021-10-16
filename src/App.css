@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+/* CUSTOMS CSS */
+a{
+  text-decoration: none;
+}
+.NavBarSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f6f7fa;
+}
+
+.List{
+  display: inline-flex;
+  list-style-type:none;
+}
+.List li{
+  margin-right: 1rem;
+}
+.List li:hover{
+  font-weight: bold;
+}
+.title{
+  text-align: center;
+}
