@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 0.6rem;
+}
+
 .App {
   text-align: center;
 }
@@ -40,11 +47,13 @@
 /* CUSTOMS CSS */
 a{
   text-decoration: none;
+  color: inherit;
 }
 .NavBarSection{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   background: #f6f7fa;
 }
@@ -55,10 +64,33 @@ a{
 }
 .List li{
   margin-right: 1rem;
+  color:black;
 }
 .List li:hover{
   font-weight: bold;
 }
 .title{
   text-align: center;
+}
+.main-container{
+  margin: 4rem;
+  text-align: center;
+}
+
+/* ITEM */
+
+.item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item-card{
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  margin: 1rem 0.3rem;
+  padding: 1.5rem 1rem;
+  text-align: left;
+}
+.img-producto{
+  width: 200px;
 }
