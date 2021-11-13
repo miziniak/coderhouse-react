@@ -1,26 +1,42 @@
-import React from 'react';
-import './style.css';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { ItemListContainer } from './container/ItemListContainer';
-import { ItemDetailContainer } from './container/ItemDetailContainer';
-import { NavBar } from './components/NavBar';
+import './App.css';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import NavBar from './components/navbar/NavBar';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
+import ItemList from './components/itemList/ItemList';
+import React from 'react'
+import {CartFuncion} from './context/CartContext'
+import Cart from './components/cart/Cart';
 
-export default function App() {
+function App() {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+    <CartFuncion>
+      <div className="App">
         <NavBar />
-
         <Switch>
-          <Route exact path="/">
-            <ItemListContainer greeting={'Tienda Nike'} />
+          <Route path="/" exact>
+            <ItemListContainer titulo='Tienda Nike' />
           </Route>
-          <Route path="/category/:catId">
-            <ItemListContainer greeting={'FILTRADO'} />
+          <Route path="/cart" exact>
+            <Cart />
           </Route>
-          <Route path="/item/:id" component={ItemDetailContainer} />
+          <Route path="/:categoria/" exact>
+            <ItemList titulo='Juegos' subtitulo='Tienda consolas retro' />
+          </Route>
+          <Route path="/:categoria/:id" exact>
+            <ItemDetailContainer titulo='Juegos' subtitulo='Tienda consolas retro' />
+          </Route>
         </Switch>
-      </BrowserRouter>
-    </>
+      </div>
+      </CartFuncion>
+    </BrowserRouter>
   );
 }
+
+export default App;

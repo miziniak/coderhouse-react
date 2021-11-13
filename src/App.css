@@ -6,6 +6,7 @@ body{
 }
 
 
+
 a {
   text-decoration: none;
   color: inherit;
@@ -24,8 +25,11 @@ a {
 }
 .links{
   margin-right: 1rem;
+  display: flex;
 }
-
+.links a{
+  margin-right: 1rem;
+}
 .activeClass {
   font-weight: bold;
   flex-direction: column;
@@ -43,7 +47,10 @@ a {
   margin-right: 1rem;
   justify-content: center;
 }
-
+.item-container{
+  display: flex;
+  margin-right: 1rem;
+}
 .item_card {
   display: flex;
   flex-direction: column;
@@ -52,6 +59,7 @@ a {
   border-radius: 10px;
   text-align: left;
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  margin-right: 1rem;
 }
 .item_card h3{
   margin:0;
