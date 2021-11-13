@@ -6,6 +6,7 @@ export const data = [
     image: '/img/ryz.png',
     price: 85,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stock:'10',
   },
   {
     id: '2',
@@ -14,6 +15,7 @@ export const data = [
     image: '/img/wildhorse.png',
     price: 130,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stock:'10',
   },
   {
     id: '3',
@@ -22,6 +24,7 @@ export const data = [
     image: '/img/force.png',
     price: 110,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stock:'20',
   },
   {
     id: '4',
@@ -30,6 +33,7 @@ export const data = [
     image: '/img/react.png',
     price: 125,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stock:'11',
   },
   {
     id: '5',
@@ -38,5 +42,6 @@ export const data = [
     image: '/img/low.png',
     price: 110,
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    stock:'21',
   },
 ];
