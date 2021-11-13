@@ -1,13 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
+import React from 'react';
+import './style.css';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { ItemListContainer } from './container/ItemListContainer';
+import { ItemDetailContainer } from './container/ItemDetailContainer';
+import { NavBar } from './components/NavBar';
 
-function App() {
+export default function App() {
   return (
     <>
-    <Home />
+      <BrowserRouter>
+        <NavBar />
+
+        <Switch>
+          <Route exact path="/">
+            <ItemListContainer greeting={'Tienda Nike'} />
+          </Route>
+          <Route path="/category/:catId">
+            <ItemListContainer greeting={'FILTRADO'} />
+          </Route>
+          <Route path="/item/:id" component={ItemDetailContainer} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 }
-
-export default App;

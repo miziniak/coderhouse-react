@@ -1,39 +1,42 @@
-const data = [
+export const data = [
   {
-    id:'1',
-    nombre:'Ryz 365 2',
-    categoria:'Top Zapatillas NIKE',
-    precio:'85',
-    imagen:'/img/ryz.png'
+    id: '1',
+    name: 'Ryz 365 2',
+    category: 'Lifestyle',
+    image: '/img/ryz.png',
+    price: 85,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    id:'2',
-    nombre:'Wildhorse 7',
-    categoria:'Top Zapatillas NIKE',
-    precio:'130',
-    imagen:'/img/wildhorse.png'
+    id: '2',
+    name: 'Wildhorse 7',
+    category: 'Lifestyle',
+    image: '/img/wildhorse.png',
+    price: 130,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    id:'3',
-    nombre:'Air Force Mid LE',
-    categoria:'Top Zapatillas NIKE',
-    precio:'110',
-    imagen:'/img/force.png'
+    id: '3',
+    name: 'Air Force Mid LE',
+    category: 'Gym-Training',
+    image: '/img/force.png',
+    price: 110,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    id:'4',
-    nombre:'React HyperSet',
-    categoria:'Top Zapatillas NIKE',
-    precio:'125',
-    imagen:'/img/react.png'
+    id: '4',
+    name: 'React HyperSet',
+    category: 'Gym-Training',
+    image: '/img/react.png',
+    price: 125,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    id:'5',
-    nombre:'Kyrie Low 4',
-    categoria:'Top Zapatillas NIKE',
-    precio:'110',
-    imagen:'/img/low.png'
-  }
-]
-
-export default data;
+    id: '5',
+    name: 'Kyrie Low 4',
+    category: 'Top-Zapatillas-Nike',
+    image: '/img/low.png',
+    price: 110,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+];
